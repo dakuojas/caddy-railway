@@ -5,5 +5,4 @@
 # Remember, Railway terminates TLS before it gets to Caddy.
 :8080
 
-root /www
-file_server
+reverse_proxy $DATABASE_URL
